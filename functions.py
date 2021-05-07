@@ -226,12 +226,8 @@ Parameters:
 numElev: number of elevators in the building
 elevServiceRange: the service range of all the elevators  
 
-Output: a dictionary paxDict with keys ArrOrder(chronological index of
-        passengers), ArrTime (arrival time from time zero of passengers),
-        Dest (destination), Walk (WtW parameter), ServedOrNot (binary indicator
-        if a passenger is served), WaitingTime (the time a passenger waited in
-        the lobby from arrival to boarding), TripTime (trip time of a passenger
-        once inside an elevator).
+Output: a dictionary elevDict with keys NextLobby,HardConstr,LobbyState, and SoftConstr
+
 """
 def createElevDict(numElev,elevServiceRange):
 
